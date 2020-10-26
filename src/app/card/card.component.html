@@ -1,0 +1,20 @@
+<div class="box mb-1 mr-1">
+    <div class="columns">
+        <h5 class="column is-two-thirds has-text-centered">{{ card.title }}</h5>
+        <span class="icon column">
+            <i
+                (click)="editText()"
+                class="fa fa-edit is-pulled-right make-clickable"
+            ></i>
+        </span>
+    </div>
+    <div class="c-content">
+        <div class="field">
+            <div class="control">
+                <textarea class="textarea" cols="40" readonly #textarea>
+                    {{ card.content }}
+                </textarea>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+.c-content {
+    color: black;
+}
+.c-content textarea {
+    font-size: 10px !important;
+    overflow: auto;
+    resize: none;
+}
+
+.make-clickable {
+    cursor: pointer !important;
+}
+
+h5 {
+    font-size: 1rem;
+}
+

@@ -6,8 +6,54 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <link rel="stylesheet" href="../../poetry-at-a-glance/node_modules/bulma/css/bulma.min.css"> -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
 </head>
 <body>
-  <app-root></app-root>
+  <!-- // Navbar -->
+  <nav class="navbar" role="navigation"
+    aria-label="Main navigation">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <img src="./assets/words-have-magic.png" 
+          class="siteLogo"
+          alt="Site logo">
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- // Body -->
+  <section class="section">
+    <div class="container">
+      <app-root></app-root>
+    </div>
+  </section>
+
+  <!-- Firebase addition -->
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+      apiKey: "AIzaSyC8UzwrJkJ1SD-q_3F_O9iVFUyPb1VcPSA",
+      authDomain: "words-have-magic.firebaseapp.com",
+      databaseURL: "https://words-have-magic.firebaseio.com",
+      projectId: "words-have-magic",
+      storageBucket: "words-have-magic.appspot.com",
+      messagingSenderId: "671154071966",
+      appId: "1:671154071966:web:1b2b001e36272d001e8e8f"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+    const app = firebase.app();
+    console.log(app);
+  </script>
 </body>
 </html>
